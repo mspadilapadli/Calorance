@@ -1,0 +1,24 @@
+body {
+  background-color: #2f4858;
+}
+
+h1 span {
+  color: #adfc03;
+}
+
+#result-box {
+  background-color: green;
+  /* opacity: 0.5; */
+}
+
+#result-box p {
+  opacity: 1;
+}
+
+.style-box {
+  background-color: #a8ad9b;
+}
+
+.input-border {
+  border: 2px solid black;
+}

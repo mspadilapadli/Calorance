@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container mt-3">
+          <div id="page1">
+            <h1 class="display-1 text-light">
+                Calor<span style="color: #adfc03">ance</span>
+            </h1>
+            <h2 class="display-6 text-light">Your calorie tolerance tracker</h2>
+            <div>
+                <p class="text-light">
+                    Mau diet mu lebih efisien agar badan mu bisa mencapai
+                    kesempurnaan? SKUY liat toleransi kalorimu hari ini!
+                </p>
+            </div>
+            <div class="border-0 rounded p-3 style-box">
+                <form id="form-input-user">
+                    <div class="mb-3 form-floating col">
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="inputNama"
+                            id="inputNama"
+                            placeholder="Nama"
+                        />
+                        <label for="inputNama" class="form-label">Nama</label>
+                    </div>
+                    <div class="mb-3 form-floating w-25">
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="inputUmur"
+                            id="inputUmur"
+                            placeholder="Umur"
+                        />
+                        <label for="inputUmur" class="form-label">Umur</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="inputTinggi"
+                            id="inputTinggi"
+                            placeholder="Tinggi"
+                        />
+                        <label class="form-label" for="inputTingg"
+                            >Tinggi (cm)</label
+                        >
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="inputBeratBadan"
+                            id="inputBeratBadan"
+                            placeholder="Berat Badan"
+                        />
+                        <label class="form-label" for="inputBeratBadan"
+                            >Berat Badan (kg)</label
+                        >
+                    </div>
+
+                    <div class="form-floating mb-3 w-25">
+                        <select
+                            class="form-select"
+                            name="inputJenisKelamin"
+                            id="jenisKelamin"
+                        >
+                            <option selected disabled>-</option>
+                            <option value="pria">Pria</option>
+                            <option value="wanita">Wanita</option>
+                        </select>
+                        <label for="inputJenisKelamin">Jenis Kelamin </label>
+                    </div>
+
+                    <input
+                        class="btn btn-primary"
+                        type="submit"
+                        name=""
+                        id=""
+                        value="Submit"
+                    />
+                </form>
+            </div>
+            <div class="mt-3 w-50 text-light">
+                <h3>Catatan</h3>
+                <p>
+                    Hasil dari kalkulator toleransi kalori ini bukanlah sebuah
+                    alat diagnosis medis ataupun pengganti konsultasi dokter.
+                    Perlu diingat bahwa ada beberapa faktor yang memengaruhi
+                    hasil kalkulator BMR ini, dari usia, kondisi tubuh
+                    masing-masing, berat badan, tinggi badan, hingga aktivitas
+                    harian. Sebelum mengubah gaya hidup, pastikan Anda
+                    konsultasi dengan dokter terlebih dahulu.
+                </p>
+            </div>
+          </div>
+          <div id='page2' style="display: none;">
+<h1 class="userName mb-3 text-light">Hello <span id="name-user">$name</span> !</h1>
+
+      <div class="text-light">
+        <p>Apa yang ingin/sudah kamu makan hari ini?</p>
+      </div>
+      <div>
+          <form  id="form-input-makanan">
+            <div class="input-group mb-3">
+            <label for="makan-pagi" class="input-group-text">Makan Pagi</label
+            ><select class="form-select" name="makan-pagi" id="makan-pagi">
+              <!-- <option value="Bubur Ayam">Bubur Ayam</option>
+              <option value="Bubur Sum-Sum">Bubur Sum-Sum</option>
+              <option value="Sate Padang">Sate Padang</option>
+              <option value="Nasi Uduk">Nasi Uduk</option>
+              <option value="Nasi Padang">Nasi Padang</option>
+              <option value="Nasi Goreng">Nasi Goreng</option>
+              <option value="Mie Instan">Mie Instan</option>
+              <option value="Mie Goreng">Mie Goreng</option>
+              <option value="Gado-Gado">Gado-Gado</option>
+              <option value="Siomay">Siomay</option>
+              <option value="'Ikan lele goreng">'Ikan lele goreng</option>
+              <option value="Ikan salmon panggang">Ikan salmon panggang</option>
+              <option value="Udang goreng tepung">Udang goreng tepung </option>
+              <option value="Bakso sapi">Bakso sapi</option>
+              <option value="Chicken nugget">Chicken nugget</option>
+              <option value="Telur orak arik">Telur orak arik</option>
+              <option value="Telur rebus">Telur rebus</option>
+              <option value="Telur dadar">Telur dadar</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="1">1</option> -->
+
+            </select>
+            </div>
+            <div class="input-group mb-3">
+            <label for="makan-siang" class="input-group-text">Makan Siang</label
+            ><select class="form-select" name="makan-siang" id="makan-siang">
+              <!-- <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option> -->
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label for="makan-malam" class="input-group-text">Makan Malam</label
+            ><select class="form-select" name="makan-malam" id="makan-malam">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option> -->
+            </select>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Lihat Result">
+          </form>
+        </div>
+      </div>
+      <div id='page3' style="display:none;">
+        <div class="d-flex items-center text-white gap-2" style="font-size: 20px; cursor: pointer;" onclick="page1()" >
+          <i class="bi bi-arrow-left-circle"></i>
+          <p>Back to home</p>
+        </div>
+               <h1 class="text-light" id="name-user3">Da Result!</h1>
+               <div style="font-size: 40px; color: white;">
+                <p class="text-center">Kalori Maintenance anda adalah <span style="color:#adfc03" > 2000 </span></p>
+               </div>
+      <div
+        class="mt-5 border border-success rounded-5 p-4 bg-success bg-gradient text-light"
+        id="result-box"
+      >
+        <!-- <p class="text-center fs-2"> -->
+          <!-- `Selamat, kamu berhasil Defisit <span id="defisitCal" style="color:red">${defisitCal}</span> kkal hari ini` -->
+        <!-- </p> -->
+        <!-- <p class="text-center fs-2"> -->
+          <!-- `Kamu melebihi batas konsumsi kalori sebanyak <span id="defisitCal" style="color:red">${defisitCal}</span> kkal hari ini. YUK LEBIH KONSISTEN!!`; -->
+         
+        <!-- </p> -->
+      </div>
+          </div>
+          </div>
+          
+            
+            <script src="myDiet.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"
+            ></script>
+        </div>
+    </body>
+</html>
