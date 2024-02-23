@@ -28,7 +28,7 @@ function insertDataIntoTable(data) {
     const table = document.querySelector("#calorieTable");
     for (let i = 0; i < data.length; i++) {
         let row = `<tr>
-                    <td>${i}</td>
+                    <td>${i + 1}</td>
                     <td>${data[i].nama}</td>
                     <td>${data[i].calorie}</td>
                 </tr>`;
